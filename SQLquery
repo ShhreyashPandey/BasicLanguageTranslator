@@ -7,6 +7,14 @@ CREATE TABLE translations (
     german VARCHAR(255)
 );
 
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+
+select * from users;
+
 
 INSERT INTO translations (german, english) VALUES
 ('Der', 'The'),
@@ -134,12 +142,3 @@ INSERT INTO translations (german, english) VALUES
 
 select * from translations;
 
-
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
-    password VARCHAR(50) NOT NULL
-);
-
-select * from users;
